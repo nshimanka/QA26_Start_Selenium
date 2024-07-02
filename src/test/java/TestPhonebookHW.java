@@ -14,7 +14,8 @@ public class TestPhonebookHW {
 
     public void setUp() {
       wd = new ChromeDriver();
-        wd.navigate().to ("https://telranedu.web.app/phonebook");
+        //wd.navigate().to ("https://telranedu.web.app/login");
+        wd.get("https://telranedu.web.app/login");
     }
 
     @Test
@@ -57,7 +58,7 @@ public class TestPhonebookHW {
         WebElement el25 = wd.findElement(By.cssSelector ("[placeholder^='Em']"));
         WebElement el26 = wd.findElement(By.cssSelector ("[placeholder='Email']"));
         WebElement el27 = wd.findElement(By.cssSelector ("[placeholder$='ail']"));
-        WebElement el28 = wd.findElement(By.cssSelector ("[placeholder*='m 1']"));
+        WebElement el28 = wd.findElement(By.cssSelector ("[placeholder*='m']"));
 
     }
 
