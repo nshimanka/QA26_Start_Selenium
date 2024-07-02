@@ -14,6 +14,7 @@ public class Index {
     public void setUp() {
         wd = new ChromeDriver();
         wd.get("file:///C:/Users/Nastya/Downloads/21.index.html");
+        //wd.navigate().to("https://telranedu.web.app/home");
 
     }
 @Test
@@ -21,7 +22,7 @@ public class Index {
         //by tagName
     WebElement button = wd.findElement(By.tagName("button"));
 //WebElement button1 = wd.findElement(By.cssSelector("button"));
-    List<WebElement> a = wd.findElements(By.tagName("a"));
+List<WebElement> a = wd.findElements(By.tagName("a"));
 //List<WebElement> list = wd.findElements(By.cssSelector("a"));
     //a.size();
     WebElement input = wd.findElement(By.tagName("input"));
@@ -45,13 +46,14 @@ public class Index {
     WebElement inputName = wd.findElement(By.cssSelector ("[placeholder='Type your name']"));
     //WebElement a2 = wd.findElement(By.cssSelector(("[href='#item3']"));
 
+
     //by name
 
-    WebElement inputS = wd.findElement((By.name("surname")));
-    //WebElement buttonS = wd.findElement((By.cssSelector("[name='surname']")));
+   WebElement inputS = wd.findElement((By.name("surname")));
+    WebElement buttonS = wd.findElement((By.cssSelector("[name='surname']")));
 
     //By.linkText & By.partialLinkText
-    WebElement a3 = wd.findElement(By.linkText("Item 1"));
+    //WebElement a3 = wd.findElement(By.linkText("Item 1"));
     //WebElement a4 = wd.findElement(By.partialLinkText("em 1"));
     }
 
